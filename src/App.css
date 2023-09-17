@@ -36,3 +36,154 @@
     transform: rotate(360deg);
   }
 }
+body {
+  /* background-color: #d96864; */
+  color: white;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.logo-th {
+  width: 140px;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: auto;
+}
+.navbar {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar--list-item {
+  display: flex;
+  gap: 32px;
+  font-size: 24px;
+}
+.navbar-item {
+  padding-bottom: 8px;
+  opacity: 0.5;
+}
+.navbar--active {
+  border-bottom: 2px solid white;
+}
+.navbar-item.navbar--active {
+  opacity: 1;
+}
+.strawberry {
+  background-color: #f14621;
+}
+.blueberry {
+  background-color: #4a367c;
+}
+.banana {
+  background-color: #ffbb0d;
+}
+.rice {
+  background-color: #d96864;
+}
+/* hero section */
+.section-wrapper {
+  padding-top: 90px;
+}
+.hero-container {
+  display: flex;
+  gap: 24px;
+  max-height: 100vh;
+  align-items: center;
+}
+.hero-item-th {
+  width: 33.33%;
+}
+.hero-item-th img {
+  max-width: 80%;
+}
+.hero-fruit-img {
+  padding: 72px 0 60px 0;
+}
+.product-header {
+  font-size: 36px;
+}
+.product-description {
+  width: 80%;
+}
+.button-view-product {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 24px 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.th-slider-wrapper {
+  position: relative;
+}
+.th-slider-container {
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+  overflow: hidden;
+}
+.th-slider-item {
+  min-width: 70%;
+}
+.left-separate {
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #fff;
+}
+.center-separate {
+  width: 1px;
+  position: absolute;
+  top: 2px;
+  left: 55%;
+  height: 100%;
+  background-color: #fff;
+}
+.button-change-item {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: -64px;
+  left: calc(55% - 33px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.bg-change-color {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: -64px;
+  left: calc(55% - 33px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  z-index: -1;
+  background-color: #d96864;
+  /* scale: 50; */
+  transform-origin: center center;
+  animation: changeColor 2s linear;
+}
+
+@keyframes changeColor {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 50;
+  }
+}
