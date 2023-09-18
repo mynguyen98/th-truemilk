@@ -16,30 +16,35 @@ export const HERO_DATA = [
     thImg: riceImg,
     discription: 'Red Rice',
     color: '#d96864',
+    bgClass: 'rice',
   },
   {
     fruitImg: thBananaImg,
     thImg: bananaImg,
     discription: 'Banana',
     color: '#ffbb0d',
+    bgClass: 'banana',
   },
   {
     fruitImg: thBlueBerryImg,
     thImg: blueberryImg,
     discription: 'Blueberry',
     color: '#4a367c',
+    bgClass: 'blueberry',
   },
   {
     fruitImg: thStrawberryImg,
     thImg: strawberryImg,
     discription: 'Strawberry',
     color: '#f14621',
+    bgClass: 'strawberry',
   },
   {
     fruitImg: thOrrangeImg,
     thImg: orrangeImg,
     discription: 'Orrange',
     color: '#E37204',
+    bgClass: 'orrange',
   },
 ]
 export const TH_IMG_DATA = [

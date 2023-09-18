@@ -37,7 +37,7 @@
   }
 }
 body {
-  /* background-color: #d96864; */
+  background-color: #000;
   color: white;
   overflow: hidden;
 }
@@ -88,9 +88,13 @@ ul {
 .rice {
   background-color: #d96864;
 }
+.orrange {
+  background-color: #e37204;
+}
 /* hero section */
 .section-wrapper {
   padding-top: 90px;
+  height: 100vh;
 }
 .hero-container {
   display: flex;
@@ -173,17 +177,27 @@ ul {
   align-items: center;
   border-radius: 100%;
   z-index: -1;
-  background-color: #d96864;
   /* scale: 50; */
-  transform-origin: center center;
-  animation: changeColor 2s linear;
+  scale: 0;
+  opacity: 0;
+  /* transform-origin: center center; */
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
 }
-
+.bg-change-color.bg-change-animation {
+  /* animation: changeColor 1.2s linear; */
+  scale: 50;
+  opacity: 1;
+}
 @keyframes changeColor {
   from {
     scale: 0;
+    opacity: 0;
   }
   to {
     scale: 50;
+    opacity: 1;
   }
 }
